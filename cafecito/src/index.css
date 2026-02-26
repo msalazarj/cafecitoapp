@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  background: #030712;
+  font-family: 'DM Sans', sans-serif;
+  color: #F1F5F9;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 0; }
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(40px) scale(0.9); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes popIn {
+  from { transform: scale(0) rotate(-15deg); }
+  to   { transform: scale(1) rotate(0deg); }
+}
+@keyframes revealIn {
+  from { opacity: 0; transform: translateY(40px) scale(0.93); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50%       { transform: translateY(-10px) rotate(1deg); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.reveal  { animation: revealIn 0.5s cubic-bezier(0.34,1.56,0.64,1) both; }
+.floater { animation: float 3.2s ease-in-out infinite; }
+.spinner {
+  display: inline-block;
+  width: 18px; height: 18px; flex-shrink: 0;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
