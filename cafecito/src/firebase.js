@@ -13,12 +13,12 @@ import { MAX_FRIENDS } from "./constants";
 //  🔥 Firebase — Kafecito App
 // ════════════════════════════════════════════════════════════════════
 const FIREBASE_CONFIG = {
-  apiKey:            "AIzaSyAY0U-htZ6NcAkkVB-vMWy18M8ucCw9T8k",
-  authDomain:        "kafecitoapp-35170512-e86e6.firebaseapp.com",
-  projectId:         "kafecitoapp-35170512-e86e6",
-  storageBucket:     "kafecitoapp-35170512-e86e6.firebasestorage.app",
-  messagingSenderId: "39207833584",
-  appId:             "1:39207833584:web:efcad1ef718b3a23f29735",
+  apiKey:            "",
+  authDomain:        "",
+  projectId:         "",
+  storageBucket:     "",
+  messagingSenderId: "",
+  appId:             "",
 };
 
 export const COL_PAYMENTS = "cafe_pagos";
